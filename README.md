@@ -1,57 +1,26 @@
-# ajaxUpload
+仿百度云AJax上传文件插件
+   运行项目:(本地要有node环境)
+   1、将ajaxUpload clone到本地
+   2、npm install 安装相关模块
+   3、node app.js启动项目
+   4、浏览器中访问localhost:3000/ajax 便能上传文件
 
-the upload plugin
-
-## Getting Started
-### On the server
-Install the module with: `npm install ajaxUpload`
-
-```javascript
-var ajaxUpload = require('ajaxUpload');
-ajaxUpload.awesome(); // "awesome"
-```
-
-### In the browser
-Download the [production version][min] or the [development version][max].
-
-[min]: https://raw.github.com/Administrator/ajaxUpload/master/dist/ajaxUpload.min.js
-[max]: https://raw.github.com/Administrator/ajaxUpload/master/dist/ajaxUpload.js
-
-In your web page:
-
-```html
-<script src="dist/ajaxUpload.min.js"></script>
-<script>
-awesome(); // "awesome"
-</script>
-```
-
-In your code, you can attach ajaxUpload's methods to any object.
-
-```html
-<script>
-var exports = Bocoup.utils;
-</script>
-<script src="dist/ajaxUpload.min.js"></script>
-<script>
-Bocoup.utils.awesome(); // "awesome"
-</script>
-```
-
-## Documentation
-_(Coming soon)_
-
-## Examples
-_(Coming soon)_
-
-## Contributing
-In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
-
-_Also, please don't edit files in the "dist" subdirectory as they are generated via Grunt. You'll find source code in the "lib" subdirectory!_
-
-## Release History
-_(Nothing yet)_
-
-## License
-Copyright (c) 2015 xiyuyizhi  
-Licensed under the MIT license.
+在自己项目中使用此插件：
+   1、将项目中public下的zjmy.upload文件夹复制到自己项目中
+   2、在自己页面中引入dest目录下的js、css文件
+   3、$('XXX').upload({
+         method: 'POST',
+         url: '/upload',
+         maxFileCount:2,
+         success: function (file, xhr) {
+            console.log(file.name+" success")
+         },
+         complete: function (file, xhr) {
+            console.log("all upload success")
+         }
+         .
+         .
+         .
+         .
+      }
+    传入的配置对象根据实际使用情况修改即可
