@@ -2,6 +2,7 @@
  * Created by wangwei on 2015/8/13.
  * AJAX上传文件插件
  */
+
 (function ($) {
     var $minimize,//最小化
         $maximize,//最大化
