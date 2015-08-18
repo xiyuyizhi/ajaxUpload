@@ -14,7 +14,6 @@
         width,//进度条的宽度
         fileLength=0;//上传文件的数量，多次上传时此变量十分重要
 
-
     /**
      * 获取xhr函数
      * @returns {Function}

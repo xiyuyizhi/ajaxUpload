@@ -44,9 +44,6 @@ module.exports = function (grunt) {
             gruntfile: {
                 files: ['<%= jshint.gruntfile.src %>','<%= jshint.upload.src %>'],
                 tasks: ['jshint:gruntfile', 'uglify','cssmin']
-            },
-            upload: {
-                files: 'public/zjmy.upload/zjmy.upload.js'
             }
         },
     })
