@@ -1,14 +1,14 @@
-·Â°Ù¶ÈÔÆAJaxÉÏ´«ÎÄ¼þ²å¼þ
-   ÔËÐÐÏîÄ¿:(±¾µØÒªÓÐnode»·¾³)
-   1¡¢½«ajaxUpload cloneµ½±¾µØ
-   2¡¢npm install °²×°Ïà¹ØÄ£¿é
-   3¡¢node app.jsÆô¶¯ÏîÄ¿
-   4¡¢ä¯ÀÀÆ÷ÖÐ·ÃÎÊlocalhost:3000/ajax ±ãÄÜÉÏ´«ÎÄ¼þ
+ä»¿ç™¾åº¦äº‘AJaxä¸Šä¼ æ–‡ä»¶æ’ä»¶
+   è¿è¡Œé¡¹ç›®:(æœ¬åœ°è¦æœ‰nodeçŽ¯å¢ƒ)
+   1ã€å°†ajaxUpload cloneåˆ°æœ¬åœ°
+   2ã€npm install å®‰è£…ç›¸å…³æ¨¡å—
+   3ã€node app.jså¯åŠ¨é¡¹ç›®
+   4ã€æµè§ˆå™¨ä¸­è®¿é—®localhost:3000/ajax ä¾¿èƒ½ä¸Šä¼ æ–‡ä»¶
 
-ÔÚ×Ô¼ºÏîÄ¿ÖÐÊ¹ÓÃ´Ë²å¼þ£º
-   1¡¢½«ÏîÄ¿ÖÐpublicÏÂµÄzjmy.uploadÎÄ¼þ¼Ð¸´ÖÆµ½×Ô¼ºÏîÄ¿ÖÐ
-   2¡¢ÔÚ×Ô¼ºÒ³ÃæÖÐÒýÈëdestÄ¿Â¼ÏÂµÄjs¡¢cssÎÄ¼þ
-   3¡¢$('XXX').upload({
+åœ¨è‡ªå·±é¡¹ç›®ä¸­ä½¿ç”¨æ­¤æ’ä»¶ï¼š
+   1ã€å°†é¡¹ç›®ä¸­publicä¸‹çš„zjmy.uploadæ–‡ä»¶å¤¹å¤åˆ¶åˆ°è‡ªå·±é¡¹ç›®ä¸­
+   2ã€åœ¨è‡ªå·±é¡µé¢ä¸­å¼•å…¥destç›®å½•ä¸‹çš„jsã€cssæ–‡ä»¶
+   3ã€$('XXX').upload({
          method: 'POST',
          url: '/upload',
          maxFileCount:2,
@@ -23,4 +23,4 @@
          .
          .
       }
-    ´«ÈëµÄÅäÖÃ¶ÔÏó¸ù¾ÝÊµ¼ÊÊ¹ÓÃÇé¿öÐÞ¸Ä¼´¿É
+    ä¼ å…¥çš„é…ç½®å¯¹è±¡æ ¹æ®å®žé™…ä½¿ç”¨æƒ…å†µä¿®æ”¹å³å¯
