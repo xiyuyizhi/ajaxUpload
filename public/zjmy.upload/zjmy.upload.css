@@ -1,22 +1,18 @@
 .gradientHead{
-    background: -webkit-linear-gradient(top, #4695ec, #3482d9);
-    background: -moz-linear-gradient(top, #4695ec, #3482d9);
-    background: -ms-linear-gradient(top, #4695ec, #3482d9);
-    filter: progid: DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#4695ec, endColorstr=#3482d9);
-+background: #4695ec;
+    background: -webkit-linear-gradient(top, #1EAC5A, #0A7939);
+    background: -moz-linear-gradient(top, #1EAC5A, #0A7939);
+    background: -ms-linear-gradient(top, #1EAC5A, #0A7939);
+    filter: progid: DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#1EAC5A, endColorstr=#0A7939);
++background: #1EAC5A;
 }
 .gradientProcess{
-    background: -webkit-linear-gradient(top, #aad9ff, #87c8ff);
-    background: -moz-linear-gradient(top, #aad9ff, #87c8ff);
-    background: -ms-linear-gradient(top, #aad9ff, #87c8ff);
-    filter: progid: DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#aad9ff, endColorstr=#87c8ff);
-+background: #4695ec;
+	background: -webkit-linear-gradient(top, #1EAC5A, #0A7939);
+    background: -moz-linear-gradient(top, #1EAC5A, #0A7939);
+    background: -ms-linear-gradient(top, #1EAC5A, #0A7939);
+    filter: progid: DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#1EAC5A, endColorstr=#0A7939);
++background: #1EAC5A;
 }
-/*½¥±ä*/
 
-/**
-*µ¯´°DIV
-*/
 #uploadProcess{
     width:600px;
     height:0px;
@@ -34,9 +30,10 @@
     -o-transition: height 1s;
     transition: height 1s;
     display: none;
+    z-index:9999;
 }
 
-/*Í·²¿Ïà¹Ø*/
+/*Í·ï¿½ï¿½ï¿½ï¿½ï¿½*/
 #uploadProcess .head{
     width: 100%;
     height:50px;
@@ -71,11 +68,11 @@
     background-position:0px -30px;
     display: none;
 }
-.menu .close{
+.menu #close{
     margin-right:10px;
 }
 
-/**½ø¶ÈÌõ*/
+/**ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½*/
 #uploadProcess .processUl{
     width: 100%;
     height: 350px;
@@ -123,7 +120,7 @@
     height:100%;
 }
 #uploadProcess span.size{
-    width:60px;
+    width:100px;
     text-align: left;
 }
 #uploadProcess span.percent{

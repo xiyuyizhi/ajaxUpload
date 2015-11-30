@@ -24,7 +24,7 @@ module.exports = function (grunt) {
         },
         cssmin: {
             css:{
-                src: 'public/zjmy.upload/zjmy.upload.css',
+                src: ['public/zjmy.upload/zjmy.upload.css'],
                 dest:'public/zjmy.upload/dest/zjmy.upload.min.css'
             }
 
@@ -33,21 +33,27 @@ module.exports = function (grunt) {
             options: {
                 jshintrc: '.jshintrc'
             },
-            gruntfile: {
+           /* gruntfile: {
                 src: 'Gruntfile.js'
-            },
+            },*/
             upload: {
-                src: ['public/zjmy.upload/zjmy.upload.js','public/zjmy.upload/zjmy.upload.css']
+                src: ['public/zjmy.upload/zjmy.upload.js']
+            }
+        },
+        //单元测试
+        karma:{
+            unit:{
+                configFile:'karma.conf.js',
+                background: true,   //在这有两个watch,grunt下的watch,karma下的watch
+                autoWatch: true,    //background是让karma的watch运行在子线程中，不影响grunt
+                singleRun: false    //下的监听
             }
         },
         watch: {
-            gruntfile: {
-                files: ['<%= jshint.gruntfile.src %>','<%= jshint.upload.src %>'],
-                tasks: ['jshint:gruntfile', 'uglify','cssmin']
+            watchedFiles: {
+                files: ['<%= jshint.upload.src %>','<%= cssmin.css.src %'],
+                tasks: [ 'uglify','cssmin','karma:unit:run']
             },
-            upload: {
-                files: 'public/zjmy.upload/zjmy.upload.js'
-            }
         },
     })
     ;
@@ -57,9 +63,10 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-css');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-karma');
 
 // Default task
-    grunt.registerTask('default', ['jshint', 'uglify','cssmin']);
+    grunt.registerTask('default', [/*'jshint',*/ 'uglify','cssmin']);
 
 }
 ;
