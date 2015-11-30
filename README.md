@@ -38,5 +38,5 @@
       $(this).after("<input type='file' name='fileselect[]' multiple style='visibility: hidden'>");
       修改name名称，与后台参数对应
       或：
-      响应回调中：xhr.status == 201、200等，根据后台指定的状态码确定
+      响应回调中：xhr.status == 201、200等，根据后台指定的状态码确定;
 
